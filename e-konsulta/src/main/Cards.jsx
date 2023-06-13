@@ -18,6 +18,8 @@ export default function Cards() {
         <UrgentServices />
         <BabyHealthMonitoring />
         <VaccineImmune />
+        {/* include mission vision here */}
+        {/* include footer here */}
       </div>
 
     </div>

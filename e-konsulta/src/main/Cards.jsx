@@ -14,6 +14,7 @@ export default function Cards() {
 
       <div className="d-flex">
         {/* include grids here */}
+        {/* include banner image + slogan here */}
         <UrgentServices />
         <BabyHealthMonitoring />
         <VaccineImmune />

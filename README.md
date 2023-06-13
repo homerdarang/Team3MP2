@@ -20,3 +20,8 @@ Okay lang naman kay sir na wala muna NodeJS yung mini2.
 
 sorry nga pala spbrang busy lang talaga ako sa work kaya ngayon lang medjo naka hinga ng unti.
 Thank you! good luck kaya natin to.
+
+note. wag po galawin ang BodyServices.jsx at Title.jsx dyan po kasi nakapaloob ang title ng component sa part ko.
+
+
+Kung may mga updates tayo sa codes. sa Cards.jsx po natin tawagin ang component na ating nagawa automatic na po yan tatawagin sa App.js

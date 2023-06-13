@@ -13,7 +13,8 @@ export default function Cards() {
       <BodyServices />
 
       <div className="d-flex">
-        {/* include grids here */}
+        {/* include navbar here */}
+        {/* I will include grids here */}
         {/* include banner image + slogan here */}
         <UrgentServices />
         <BabyHealthMonitoring />

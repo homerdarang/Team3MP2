@@ -4,7 +4,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import BabyHealthMonitoring from './BabyHealthMonitoring';
 import Cards from '../main/Cards';
 import VaccineImmune from './VaccineImmune';
-import CareService from './CareService';
+import CareServices from './CareService';
 
 export default function Routing() {
   return (
@@ -12,7 +12,7 @@ export default function Routing() {
       <Routes>
         {/* <Route path="/" element={<RoutingMenus />}/> */}
         <Route index element={<Cards />}/>
-        <Route path="/urgent-service" element={<CareService />}/>
+        <Route path="/urgent-service" element={<CareServices />}/>
         <Route path="/monitoring" element={<BabyHealthMonitoring />}/>
         <Route path="/vaccine" element={<VaccineImmune />}/> 
       </Routes>

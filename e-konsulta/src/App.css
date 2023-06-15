@@ -488,3 +488,121 @@ body {
 .border-rounded {
   border-radius: 16px !important;
 }
+.vision-mission-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f1f1f1;
+}
+
+.vision, .mission {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.vision h2, .mission h2 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #2192FF;
+}
+
+.vision p, .mission p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #2192FF;
+}
+.vision-mission-container {
+  margin-bottom: 200px; 
+}
+
+
+
+/* Footer */
+.footer-container {
+  background-color: #38E54D;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-column {
+  width: 100%;
+  padding: 10px;
+}
+
+@media (min-width: 768px) {
+  .footer-column {
+    width: 25%;
+  }
+}
+
+/* footer error message */
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+/* Consult Now Form */
+.consult-now-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.consult-now-form input {
+  margin-bottom: 10px;
+}
+input[type="text"],
+input[type="email"] {
+  padding: 6px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 220px; 
+  height: 36px; 
+}
+.consult-now-button {
+  margin-top: 10px;
+  padding: 6px 12px;
+  font-size: 14px;
+  background-color: #F6EC72;
+  color: blue;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.consult-now-button:hover {
+  background-color: white;
+}
+
+/* Footer Links */
+.footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.footer-link {
+  margin: 10px;
+  padding: 8px 16px;
+  background-color:#F6EC72;
+  color: blue;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.footer-link:hover {
+  background-color:white;
+}
+

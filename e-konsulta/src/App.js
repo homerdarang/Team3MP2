@@ -1,6 +1,9 @@
 
 import './App.css';
 import Routing from './Components/Routing';
+import BodyServices from './main/BodyServices';
+import VisionMission from './Components/VisionMission';
+import Footer from './Components/Footer';
 // import BodyServices from './main/BodyServices';
 
 function App() {
@@ -8,6 +11,8 @@ function App() {
   return (
     <div>
       <Routing />
+      <VisionMission />
+      <Footer />
     </div>
   );
 }

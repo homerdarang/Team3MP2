@@ -3,7 +3,9 @@ import { styled } from '@mui/material/styles';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import { Typography } from '@mui/material';
+import { useNavigate } from 'react-router-dom';
 import Home from './pages/Home';
+// import Navbar from './Navbar';
 
 const Item = styled(Paper) (({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -18,18 +20,18 @@ const Item = styled(Paper) (({ theme }) => ({
 
 
 
-export default function CareServices() {
+export default function Immunity() {
   return (
     <div className="mt-2">
         <Typography variant="h5" className='txt-primary pb-2 pt-4 mini-title text-center'>
-                Urgent care and Services
+                Boosting immune System
         </Typography>
         
         <Grid container spacing={2} >
             <Grid item xl={8} lg={8} md={8} sm={12} xs={12}>
                 <Item>
                     <Typography variant="h5" className='text-left txt-primary mx-4 mt-1 mb-2'>
-                        Illnesses and injuries treated
+                        Best foods for Babies 
                     </Typography>
                     <Typography className='text-left txt-mute mx-4'>
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit.

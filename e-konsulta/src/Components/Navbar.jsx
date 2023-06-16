@@ -13,6 +13,8 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
+import { Link } from 'react-router-dom';
+// import Routing from './Routing';
 
 const drawerWidth = 240;
 const navItems = ['Home', 'About', 'Contact'];
@@ -28,14 +30,14 @@ function Navbar(props) {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
       <Typography variant="h6" sx={{ my: 2 }}>
-        MUI - Mobile version Drawer
+        E-Konsulta
       </Typography>
       <Divider />
-      <List>
+      <List >
         {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: 'center' }}>
-              <ListItemText primary={item} />
+          <ListItem key={item} disablePadding >
+            <ListItemButton sx={{ textAlign: 'center' }} >
+              <ListItemText primary={<Link to={`/${item}`} style={{color: '#818181'}}>{item}</Link>} />
             </ListItemButton>
           </ListItem>
         ))}
@@ -48,7 +50,7 @@ function Navbar(props) {
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
-      <AppBar component="nav">
+      <AppBar component="nav" className='bg-color-primary box-shadow-none'>
         <Toolbar>
           <IconButton
             color="inherit"
@@ -64,12 +66,12 @@ function Navbar(props) {
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
           >
-            MUI - Desktop version
+            E-Konsulta
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
-              <Button key={item} sx={{ color: '#fff' }}>
-                {item}
+              <Button key={item} sx={{ color: '#F6F6F6' }}>
+                <Link to={`/${item}`} style={{color: '#F6F6F6'}}>{item}</Link>
               </Button>
             ))}
           </Box>
@@ -93,10 +95,7 @@ function Navbar(props) {
         </Drawer>
       </Box>
       <Box component="main" sx={{ p: 3 }}>
-        <Toolbar />
-        <Typography>
-          Test Test Navbar navbar
-        </Typography>
+        
       </Box>
     </Box>
   );

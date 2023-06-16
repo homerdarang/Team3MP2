@@ -4,7 +4,7 @@ import Title from '../Title/Title';
 export default function BodyServices() {
   
   return (
-    <div className='container'>
+    <div className='container mt-3'>
       <Title text={""}/>
     </div>
   )

@@ -3,7 +3,7 @@ import { styled } from '@mui/material/styles';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import { Typography } from '@mui/material';
-import Home from './pages/Home';
+import { useNavigate } from 'react-router-dom';
 
 const Item = styled(Paper) (({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -18,20 +18,24 @@ const Item = styled(Paper) (({ theme }) => ({
 
 
 
-export default function CareServices() {
+export default function About() {
+  const navigate = useNavigate();
+
+  const handleAbout = () => {
+    navigate("/about");
+  }
+
   return (
-    <div className="mt-2">
-        <Typography variant="h5" className='txt-primary pb-2 pt-4 mini-title text-center'>
-                Urgent care and Services
+    <div className="mt-2" onClick={handleAbout}>
+        {/* include navbar here */}
+        <Typography  variant="h5" className='txt-primary pb-2 fw-5 pt-4 mini-title text-center'>
+                About E-Konsulta
         </Typography>
         
         <Grid container spacing={2} >
             <Grid item xl={8} lg={8} md={8} sm={12} xs={12}>
                 <Item>
-                    <Typography variant="h5" className='text-left txt-primary mx-4 mt-1 mb-2'>
-                        Illnesses and injuries treated
-                    </Typography>
-                    <Typography className='text-left txt-mute mx-4'>
+                    <Typography className='text-left txt-mute mx-4 mt-2'>
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                         Porro commodi earum et eveniet, omnis, enim ab voluptates
                         alias fuga maiores atque voluptatem? Illo ipsa ex optio
@@ -79,8 +83,6 @@ export default function CareServices() {
                     <Typography className='text-left txt-mute mx-4'>
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                         Porro commodi earum et eveniet
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                        Porro commodi earum et eveniet
                     </Typography>
                     <Typography className='txt-primary fs-md text-left mx-4 my-1'>
                         Lorem ipsum dolor sit, amet consectetur adipisicing
@@ -123,7 +125,7 @@ export default function CareServices() {
                                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                             </Typography>
                         </Typography>
-                        <Typography className='bg-color-warning px-2 py-1'>
+                        <Typography className='bg-color-warning px-1 py-1'>
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                             Porro commodi earum et eveniet, omnis, enim ab voluptates
                             alias fuga maiores atque voluptatem? enim ab voluptates
@@ -134,7 +136,6 @@ export default function CareServices() {
             </Grid>
         </Grid>
         {/* include footer here */}
-        <Home />
     </div>
   );
 }

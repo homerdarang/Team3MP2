@@ -11,7 +11,7 @@ export default function VaccineImmune() {
   }
 
   return (
-    <div className='container text-center'>
+    <div className='container d-flex text-center'>
       <Card onClick={handleClick} sx={{ maxWidth: 600 }} className='m-1 border-rounded'>
         <CardContent sx={{padding: 8}} className='card-primary txt-primary'>
           <VaccinesTwoToneIcon sx={{fontSize: 80}} className='mb-4'/>

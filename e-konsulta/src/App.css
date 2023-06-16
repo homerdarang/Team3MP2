@@ -13,7 +13,7 @@ body {
 
 /* container */
 .container {
-  max-width: 1366px !important;
+  max-width: 1400px !important;
   margin: 0 auto !important;
 }
 
@@ -417,7 +417,7 @@ body {
 
 .subtitle {
   font-size: 2.5rem !important;
-  font-weight: 400 !important;
+  font-weight: 500 !important;
   margin: 2rem 0 !important;
 }
 
@@ -495,6 +495,10 @@ body {
 .txt-plain {
   color: #F6F6F6 !important;
 }
+.plain-txt:hover {
+  color: #F6EC72 !important;
+}
+
 
 .txt-dark {
   color: #272938 !important;
@@ -548,6 +552,144 @@ body {
   border-radius: 16px !important;
 }
 
+
+.vision-mission-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f1f1f1;
+}
+
+.vision, .mission {
+  text-align: center;
+  /* margin-bottom: 20px; */
+  margin: 80px auto ;
+  width: 80%;
+}
+
+.vision h2, .mission h2 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #2192FF;
+}
+
+.vision p, .mission p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #2192FF;
+}
+.vision-mission-container {
+  margin-bottom: 200px; 
+}
+
+
+
+/* Footer */
+.footer-container {
+  /* background-color: #38E54D; */
+  background-color: #1654ae;
+  border-radius: 15px;
+  width: 100%;
+  /* position: fixed; */
+  left: 0;
+  bottom: 0;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-column {
+  width: 100%;
+  padding: 10px;
+}
+
+@media (min-width: 768px) {
+  .footer-column {
+    width: 25%;
+  }
+}
+
+/* text field error message */
+.error {
+  background-color: #f84951;
+  border-radius: 5px;
+  padding: 7px;
+  width: 50%;
+  margin: 5px auto;
+  color: #F6F6F6;
+  font-size: 1rem;
+}
+
+/* footer error message */
+.error-message {
+  background-color: #f84951;
+  padding: 5px;
+  width: 73%;
+  color: #F6F6F6;
+  font-size: 12px;
+  margin-top: 5px;
+}
+/* Consult Now Form */
+.consult-now-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.consult-now-form input {
+  margin-bottom: 10px;
+}
+input[type="text"],
+input[type="email"] {
+  padding: 6px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 220px; 
+  height: 36px; 
+}
+.consult-now-button {
+  margin-top: 10px;
+  padding: 6px 12px;
+  font-size: 14px;
+  background-color: #F6EC72;
+  color: blue;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.consult-now-button:hover {
+  background-color: white;
+}
+
+/* Footer Links */
+.footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.footer-link {
+  margin: 10px;
+  padding: 8px 16px;
+  background-color:#F6EC72;
+  color: blue;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.footer-link:hover {
+  background-color:white;
+}#144690
+/* ======= */
+
 .border-semi-rounded {
   border-radius: 5px !important;
 }
@@ -560,6 +702,7 @@ body {
 /* shadow */
 .box-shadow-none {
   box-shadow: none !important;
+/* >>>>>>> 33f7accdd97eea333efddce477f21f14635484e9 */
 }
 
 
@@ -574,3 +717,57 @@ body {
 }
 
 
+/* sir aldhen */
+.homesec{
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center  !important;
+  align-items: center !important;
+  width: 100% !important;
+  height: 100vh !important;
+}
+
+.backg{
+  background-image: url('./Components/images/banner2.jpg') !important;
+  background-repeat: no-repeat !important;
+  background-size: cover  !important;
+  background-position: center top !important;
+}
+.iconsize{
+  margin-top: 1% !important;
+  margin-bottom: 1% !important;
+  margin-left: 5% !important;
+  height: 50px !important;
+  width: 50px !important;
+}
+
+
+/* width */
+
+.w-100 {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 100% !important;
+}
+
+.w-75 {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 75% !important;
+}
+
+.w-50 {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 50% !important;
+}
+
+.w-20 {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 20% !important;
+}

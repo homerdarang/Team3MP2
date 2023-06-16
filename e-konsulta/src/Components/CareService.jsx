@@ -3,7 +3,7 @@ import { styled } from '@mui/material/styles';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import { Typography } from '@mui/material';
-import Home from './pages/Home';
+import Home from './Banner';
 
 const Item = styled(Paper) (({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -26,7 +26,7 @@ export default function CareServices() {
         </Typography>
         
         <Grid container spacing={2} >
-            <Grid item xl={8} lg={8} md={8} sm={12} xs={12}>
+            <Grid item xl={12} lg={12} md={12} sm={12} xs={12}>
                 <Item>
                     <Typography variant="h5" className='text-left txt-primary mx-4 mt-1 mb-2'>
                         Illnesses and injuries treated
@@ -90,7 +90,7 @@ export default function CareServices() {
                     </Typography>
                 </Item>
             </Grid>
-            <Grid item xl={4} lg={4} md={4} sm={12} xs={12}>
+            <Grid item xl={12} lg={12} md={12} sm={12} xs={12}>
                 <Item>
                     <Typography className='bg-color-warning py-1 fs-lg fw-6 border-semi-rounded px-2'>
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit.

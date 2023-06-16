@@ -1,27 +1,28 @@
 import React from 'react'
-import UrgentServices from '../UrgentServices';
-import BabyHealthMonitoring from '../BabyHealthMonitoring';
-import VaccineImmune from '../VaccineImmune';
-import { Box, Grid } from '@mui/material';
-import BodyServices from '../../main/BodyServices';
+// import Navbar from './Navbar'
+import { Box, Typography } from '@mui/material'
+// import Routing from '../Routing'
+// import Banner from '../Banner'
 
-export default function Home() {
+function Home() {
   return (
     <div>
-      <BodyServices />
-      <Box className='container d-flex mt-4'>
-          <Grid container spacing={2}>
-            <Grid item xl={4} lg={4} md={4} sm={12} xs={12}>
-              <UrgentServices />
-            </Grid>
-            <Grid item xl={4} lg={4} md={4} sm={12} xs={12}>
-              <BabyHealthMonitoring />
-            </Grid>
-            <Grid item xl={4} lg={4} md={4} sm={12} xs={12}>
-              <VaccineImmune />
-            </Grid>
-          </Grid>
+      <Box className ='homesec backg txt-plain text-center'>
+        {/* <Typography className='title-main'>
+          Welcome To
+        </Typography> */}
+        <Typography className='mini-title'>
+          E-Konsulta &#8478;
+        </Typography>
+          {/* <img src="./images/e-Kunsulta.png" alt="icon" /> */}
+        <Typography className='fw-7 px-4' variant='h6' >
+          Your Health, Your Convenience: Expert Care Just a Click Away!
+        </Typography>
+        
       </Box>
     </div>
+    
   )
 }
+
+export default Home

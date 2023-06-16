@@ -1,0 +1,12 @@
+{
+  "name": "team3mp2",
+  "version": "1.0.0",
+  "description": "Project colors:\r #2192FF === navbar background color/text color \r #38E54D === footer background color\r #F6EC72 === \r #F6F6F6 === Body color/text color\r #272932 === Text footer color",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -4,7 +4,7 @@ import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import { Typography } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
-import Home from './pages/Home';
+import Home from './Banner';
 // import Navbar from './Navbar';
 
 const Item = styled(Paper) (({ theme }) => ({
@@ -28,7 +28,7 @@ export default function Immunity() {
         </Typography>
         
         <Grid container spacing={2} >
-            <Grid item xl={8} lg={8} md={8} sm={12} xs={12}>
+            <Grid item xl={12} lg={12} md={12} sm={12} xs={12}>
                 <Item>
                     <Typography variant="h5" className='text-left txt-primary mx-4 mt-1 mb-2'>
                         Best foods for Babies 
@@ -92,48 +92,27 @@ export default function Immunity() {
                     </Typography>
                 </Item>
             </Grid>
-            <Grid item xl={4} lg={4} md={4} sm={12} xs={12}>
+       
+            <Grid item xl={12} lg={12} md={12} sm={12} xs={12} className='mt-1'>
                 <Item>
-                    <Typography className='bg-color-warning py-1 fs-lg fw-6 border-semi-rounded px-2'>
+                    <Typography className='bg-color-warning py-1 fs-md fw-6 border-semi-rounded px-2'>
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        <Typography className='fs-sm px-3 fw-2'>
+                        <Typography className='fs-sm px-2 pt-1 fw-2'>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        </Typography>
+                        <Typography className='fs-sm fw-2'>
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                         </Typography>
                     </Typography>
-                    <Typography className='bg-color-warning px-3 py-1'>
+                    <Typography className='bg-color-warning px-2 py-1'>
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                         Porro commodi earum et eveniet, omnis, enim ab voluptates
-                        alias fuga maiores atque voluptatem? Illo ipsa ex optio
-                        quisquam, tenetur provident nesciunt.
-                        Porro commodi earum et eveniet, omnis, enim ab voluptates
-                        alias fuga maiores atque voluptatem? Illo ipsa ex optio
-                        quisquam, tenetur provident nesciunt.
-                        Porro commodi earum et eveniet, omnis, enim ab voluptates
-                        alias fuga maiores atque voluptatem? Illo ipsa ex optio
-                        quisquam, tenetur provident nesciunt.
+                        alias fuga maiores atque voluptatem? enim ab voluptates
+                        orro commodi earum et eveniet, omnis, enim ab voluptates
                     </Typography>
                 </Item>
-
-                <Grid item xl={12} lg={12} md={12} sm={12} xs={12} className='mt-1'>
-                    <Item>
-                        <Typography className='bg-color-warning py-1 fs-md fw-6 border-semi-rounded px-2'>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                            <Typography className='fs-sm px-2 pt-1 fw-2'>
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                            </Typography>
-                            <Typography className='fs-sm fw-2'>
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                            </Typography>
-                        </Typography>
-                        <Typography className='bg-color-warning px-2 py-1'>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                            Porro commodi earum et eveniet, omnis, enim ab voluptates
-                            alias fuga maiores atque voluptatem? enim ab voluptates
-                            orro commodi earum et eveniet, omnis, enim ab voluptates
-                        </Typography>
-                    </Item>
-                </Grid>
             </Grid>
+
         </Grid>
         {/* include footer here */}
         <Home />

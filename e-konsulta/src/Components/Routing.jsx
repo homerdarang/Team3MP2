@@ -1,23 +1,18 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import CareServices from './CareService';
-import Home from './pages/Home';
+import Home from './Banner';
 import About from './pages/About';
 import Navbar from './Navbar';
 import Contact from './pages/Contact';
 import HealthMonitoring from './HealthMonitoring';
 import Immunity from './Imunity';
+import Banner from './Banner';
+// import SuccessMessage from './SuccessMessage';
 
 export default function Routing() {
   return (
-    // <Router >
-    //   <Routes>
-    //     <Route index element={<Home />}/>
-    //     <Route path="/urgent-service" element={<CareServices />}/>›
-    //     <Route path="/monitoring" element={<BabyHealthMonitoring />}/>
-    //     <Route path="/vaccine" element={<VaccineImmune />}/>
-    //   </Routes>
-    // </Router>
+  
       <Router>
         <Navbar />
         <Routes>
